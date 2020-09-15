@@ -1,0 +1,16 @@
+spring:
+  database:
+    driverClassName: com.mysql.cj.jdbc.Driver
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://127.0.0.1:3308/bench?useSSL=false&serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: true
