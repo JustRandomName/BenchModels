@@ -1,8 +1,7 @@
-package models.models;
+package model;
 
 import static org.springframework.boot.SpringApplication.run;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication

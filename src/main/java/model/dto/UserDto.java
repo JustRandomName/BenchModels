@@ -1,4 +1,4 @@
-package models.models.dto;
+package model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +21,4 @@ public class UserDto {
     private String password;
     private String username;
     private boolean enabled;
-    private String token;
-
 }

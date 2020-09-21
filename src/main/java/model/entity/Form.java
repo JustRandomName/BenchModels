@@ -1,4 +1,4 @@
-package models.models.entity;
+package model.entity;
 
 import static javax.persistence.CascadeType.MERGE;
 import static javax.persistence.FetchType.EAGER;
