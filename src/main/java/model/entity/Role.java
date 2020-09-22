@@ -21,7 +21,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Entity
-@Table(name = "role")
+@Table(name = "value")
 @Getter
 @Setter
 @AllArgsConstructor
