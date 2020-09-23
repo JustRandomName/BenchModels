@@ -16,12 +16,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import java.util.Set;
 import java.util.UUID;
 
 @Entity
-@Table(name = "value")
+@Table(name = "role")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -38,7 +37,6 @@ public class Role implements GrantedAuthority {
     @Column
     private String name;
 
-    @Transient
     @ManyToMany(mappedBy = "roles", cascade = ALL)
     private Set<User> users;
 
