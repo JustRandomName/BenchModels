@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -36,15 +37,10 @@ public class Form {
     private UUID id;
 
     @Column
-    private String firstName;
+    private String name;
 
     @Column
-    private String lastName;
-
-    @Column
-    private String middleName;
-
-    @Column
+    @CreatedDate
     private LocalDate dateCreated;
 
     @Column
@@ -58,18 +54,14 @@ public class Form {
     private User user;
 
     public Form(final UUID id,
-                final String firstName,
-                final String lastName,
-                final String middleName,
-                final LocalDate dateCreated,
                 final String request,
-                final String phone) {
+                final String phone,
+                final String name,
+                final User userId) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.middleName = middleName;
-        this.dateCreated = dateCreated;
         this.request = request;
         this.phone = phone;
+        this.user = userId;
+        this.name = name;
     }
 }

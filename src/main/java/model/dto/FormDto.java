@@ -16,27 +16,21 @@ import java.util.UUID;
 public class FormDto {
 
     private UUID id;
-    private String firstName;
-    private String lastName;
-    private String middleName;
     private LocalDate dateCreated;
     private String request;
     private String phone;
-    private UserDto user;
+    private String userId;
+    private String name;
 
     public FormDto(final UUID id,
-                   final String firstName,
-                   final String lastName,
-                   final String middleName,
                    final LocalDate dateCreated,
                    final String request,
+                   final String name,
                    final String phone) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.middleName = middleName;
         this.dateCreated = dateCreated;
         this.request = request;
         this.phone = phone;
+        this.name = name;
     }
 }

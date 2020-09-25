@@ -17,4 +17,5 @@ import lombok.Setter;
 public class AuthDto {
     private String token;
     private String username;
+    private String userId;
 }
